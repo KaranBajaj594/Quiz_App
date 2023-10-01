@@ -79,6 +79,7 @@ Experience an engaging Quiz app crafted with HTML, CSS, and JavaScript. Test you
 ## Repo Link:
 https://github.com/KaranBajaj594/Quiz_App.git
 
-
+## GeeksforGeeks Profile Link:
+https://auth.geeksforgeeks.org/user/coder229coder
 
 
