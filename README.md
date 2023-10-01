@@ -15,7 +15,7 @@ Experience an engaging Quiz app crafted with HTML, CSS, and JavaScript. Test you
 
 - **Timer Functionality:** A __timer__ is implemented for each question, limiting the time for each question to ```15 seconds```. This timer adds a dynamic element to the quiz.
 
-- **Countdown Highlight:** In the last ```5 seconds``` of the timer, a __red border__ is added to emphasize the limited time remaining for that question, enhancing the user's sense of urgency.
+- **Countdown Highlight:** In the last ```5 seconds``` of the timer, a __red border__ is added to emphasize the limited time remaining for that question, enhancing the user's sense of urgency.After the time is up, user is __automatically__ navigated to the __next Question__ marking ```0``` for that particular question.
 
 - **User-Friendly Validation:** Each question is __validated__ based on the user's choice, providing instant indications of __correctness__. Correct answers are highlighted in __green__, and incorrect answers are highlighted in __red__. This feature helps users understand their progress.
 
