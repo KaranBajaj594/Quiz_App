@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+  }
+
+body {
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    padding: 0 16px;
+  }
+
+header {
+    background-color: #f5ba13;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+  }
+
+.app_body{
+    height: 85vh;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app_body h1{
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+.quiz_container {
+    height: auto;
+    max-height: 100%;
+    position: relative;
+    width: 480px;
+    max-width: 850px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+  }
+
+.quiz_container .quiz_questions,
+.quiz_container .quiz_options {
+    width: 100%;
+    padding: 4px;
+    font-size: 1.2em;
+    font-family: inherit;
+}
+
+.quiz_container .quiz_options{
+    /* margin-top: 20px; */
+    border-top: 1px solid grey;
+    margin-top: 2.5px;
+}
+
+
+.option_choice{
+    width: 95%;
+    margin: 10px 0;
+    padding: 10px;
+    height: 2.5rem;
+    border: 2px solid darkgray;
+    border-radius: 12.5px;
+    overflow: hidden;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: fade-in 0.5s ease forwards;
+}
+
+.option_choice:hover{
+   background-color: #ddd;
+}
+
+.btn{
+display: inline-block;
+outline: 0;
+border: 0;
+cursor: pointer;
+transition: box-shadow 0.15s ease,transform 0.15s ease;
+will-change: box-shadow,transform;
+background: #f5ba13;
+box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+height: 48px;
+width: 202px;
+padding: 0 32px;
+font-size: 18px;
+border-radius: 6px;
+/* color: #36395a; */
+color:#fff;
+transition: box-shadow 0.15s ease,transform 0.15s ease;
+}
+
+.btn:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+    transform: translateY(-2px);
+}
+
+.btn:active{
+    box-shadow: inset 0px 3px 7px #d6d6e7;
+    transform: translateY(2px);
+}
+
+.option_choice.isSelected{
+    background-color: #f5ba13;
+    color: #fff;
+}
+
+.scoreCard{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.correct{
+    background-color: #9aeabc !important;
+}
+
+.incorrect{
+    background-color: #ff9393 !important;
+}
+
+.quiz_timer{
+    position: absolute;
+    right: -25px;
+    bottom: -25px;
+    background: #f5ba13;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+.less_time{
+    border: 2px solid red;
+    animation: fast 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes fast {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-in {
+    0%{
+        opacity:0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .quiz_container {
+        width: 100%;
+      }
+
+      .quiz_timer{
+        right: 45%;
+        bottom: -30px;
+        width: 60px;
+        height: 60px;
+        font-size: 1.0em;
+    }
+
+    .btn{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .option_choice{
+        width: 100%;
+    }
+}

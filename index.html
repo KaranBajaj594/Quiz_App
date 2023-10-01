@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz_App</title>
+</head>
+<body onload="startQuiz()">
+
+    <div class="app_container">
+        <div class="app_header">
+            <header>
+                <h1>Quiz App</h1>
+            </header>
+        </div>
+        <div class="app_body">
+            <h1 class="title">Take a Quiz!!</h1>
+            <div class="quiz_container">
+                <h2 class="quiz_feedback"></h2>
+                <div class="quiz_questions"></div>
+                <div class="quiz_options"></div>
+                <div class="check_submit_btn" style="display: inline;">
+                    <button class="btn">Submit</button>
+                </div>
+                <button class="btn quiz_btn">Next</button>
+                <div class="scoreCard"></div>
+                <div class="quiz_timer">15</div>
+           </div>
+        </div> 
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
