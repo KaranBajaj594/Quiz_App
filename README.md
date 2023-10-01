@@ -30,7 +30,7 @@ Experience an engaging Quiz app crafted with HTML, CSS, and JavaScript. Test you
 - **Final Score Display:** After answering all questions, a final score is displayed, providing users with a clear summary of their performance.
 
 - **Responsiveness:** The website is designed to be __responsive__, ensuring a seamless user experience on various devices and screen sizes.
-- 
+  
 - **Score-Based Feedback:** The website offers feedback according to the user's score, enhancing the overall user experience.
 
 - **Restart Option:** An interactive ```Restart``` button allows users to __retake__ the quiz, encouraging further engagement and practice.
